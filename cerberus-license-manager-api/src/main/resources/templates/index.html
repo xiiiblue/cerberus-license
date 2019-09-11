@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Index</title>
+    <link rel="stylesheet" th:href="@{css/index.css}"/>
+</head>
+<body>
+<span th:object="${session}"></span>
+<div class="menubox">
+    <div class="menuhead">
+        <h1>ETHER-AUDIT</h1>
+    </div>
+    <ul>
+        <li><a th:href="@{swagger-ui.html}">swagger-ui</a></li>
+        <li><a th:href="@{v2/api-docs}">swagger-json</a></li>
+        <li><a th:href="@{actuator/health}">actuator-health</a></li>
+        <li><a th:href="@{actuator/logfile}">actuator-logfile</a></li>
+        <li><a th:href="@{actuator/httptrace}">actuator-httptrace</a></li>
+        <li><a th:href="@{actuator/beans}">actuator-beans</a></li>
+        <li><a th:href="@{actuator/metrics}">actuator-metrics</a></li>
+        <li><a th:href="@{actuator/mappings}">actuator-mappings</a></li>
+        <li><a th:href="@{actuator/env}">actuator-env</a></li>
+    </ul>
+</div>
+</body>
+</html>
