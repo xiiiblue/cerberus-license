@@ -6,7 +6,7 @@
 
     <groupId>cn.telchina.cerberus</groupId>
     <artifactId>cerberus-license-manager-cli</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>cerberus-license-manager-cli</name>
