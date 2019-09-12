@@ -16,7 +16,7 @@ import java.io.IOException;
 @Slf4j
 @Component
 @WebFilter(urlPatterns = "/*", filterName = "licenseFilter")
-public class LicenseFilter implements Filter {
+public class LicenseVerifyFilter implements Filter {
     @Autowired
     private LicenseVerifier verifier;
 

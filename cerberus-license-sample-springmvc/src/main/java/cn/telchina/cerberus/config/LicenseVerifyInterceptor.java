@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Slf4j
 @Configuration
-class LicenseInterceptor implements WebMvcConfigurer {
+class LicenseVerifyInterceptor implements WebMvcConfigurer {
     @Autowired
     private LicenseVerifier verifier;
 
