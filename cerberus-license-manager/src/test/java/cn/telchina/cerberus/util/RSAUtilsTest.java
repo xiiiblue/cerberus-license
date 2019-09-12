@@ -1,6 +1,5 @@
 package cn.telchina.cerberus.util;
 
-import cn.telchina.cerberus.util.RSAUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

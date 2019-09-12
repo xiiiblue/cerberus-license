@@ -1,4 +1,4 @@
-server.port: 8080
+server.port: 3000
 logging:
   file: logs/cerberus-license-manager-api.log
   file.max-history: 7
