@@ -68,10 +68,11 @@ abstract class AbstractLicenseManager {
         String serialize;
         try {
             serialize = objectMapper.writeValueAsString(license);
+            log.debug("serialize: {}", serialize);
+
         } catch (JsonProcessingException e) {
             log.error("context", e);
             throw new LicenseVerifyException("License编码失败");
-
         }
         byte[] bytes = serialize.getBytes();
         return Base64.getEncoder().encodeToString(bytes);

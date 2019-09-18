@@ -27,7 +27,9 @@ public class LicenseVerifyAspect {
     @Before("licensePointcut()")
     public void doBefore(JoinPoint joinPoint) {
         boolean check = verifier.checkExpire();
-        log.debug("License有效期校验(Aspect): {}", check);
+        if(log.isDebugEnabled()) {
+            log.debug("License有效期校验(Aspect): {}", check);
+        }
 
         if (!check) {
             throw new LicenseVerifyException("License已超出有效期");

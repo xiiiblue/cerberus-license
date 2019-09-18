@@ -27,7 +27,9 @@ class LicenseVerifyInterceptor implements WebMvcConfigurer {
             @Override
             public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
                 boolean check = verifier.checkExpire();
-                log.debug("License有效期校验(Interceptor): {}", check);
+                if (log.isDebugEnabled()) {
+                    log.debug("License有效期校验(Interceptor): {}", check);
+                }
 
                 if (!check) {
                     log.error("License已超出有效期");

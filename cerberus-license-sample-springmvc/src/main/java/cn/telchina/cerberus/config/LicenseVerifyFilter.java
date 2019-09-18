@@ -28,7 +28,9 @@ public class LicenseVerifyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         boolean check = verifier.checkExpire();
-        log.debug("License有效期校验(Filter): {}", check);
+        if (log.isDebugEnabled()) {
+            log.debug("License有效期校验(Filter): {}", check);
+        }
 
         if (!check) {
             throw new LicenseVerifyException("License已超出有效期");
