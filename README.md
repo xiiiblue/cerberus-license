@@ -77,7 +77,7 @@ QyOGM0NGUwZWNkMDU2ZGU3YjVlYTZmY2RjNjY2OWFiMTk5NGM0Nz
 License中包含的信息，有如下几个字段:  
 
 字段名 | 解释 | 备注
----- | ----
+---- | ---- | ---
 licenseId | UUID | 自动生成
 subject | 主题 | 描述系统名称、版本号等
 issuedDate | 签发时间 | 自动生成
