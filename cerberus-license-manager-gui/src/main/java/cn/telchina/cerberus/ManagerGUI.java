@@ -65,6 +65,7 @@ public class ManagerGUI {
                         .setAuthType(type)
                         .setExpireDate(periodInt)
                         .setFingerprint(fingerprint)
+                        .setExtra(extra)
                         .build();
                 textFieldLicense.setText(license);
             }
